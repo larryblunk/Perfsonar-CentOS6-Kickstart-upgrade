@@ -8,5 +8,5 @@ remotely without direct console access can be accomplished using a Kickstart bas
 The Kickstart contained in this repository is based off the mechansim described in this
 blog post -- https://fredrikaverpil.github.io/2015/12/30/install-centos-7-remotely-using-kickstart-and-grub/
 
-The kickstart template used for this kickstart comes from the Perfsonar net-install Kickstart file
+The kickstart template used for this kickstart comes from the Perfsonar CentOS 7 net-install Kickstart file
 at https://github.com/perfsonar/toolkit-building/blob/master/kickstarts/centos7-netinstall.cfg
