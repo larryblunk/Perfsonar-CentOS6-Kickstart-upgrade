@@ -28,7 +28,9 @@ and place in /boot directory.
 the Kickstart installation on next reboot --
 
 title Install CentOS 7 Perfsonar
-kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks
-initrd /initrd.img
+
+  kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks
+  
+  initrd /initrd.img
 
 5) Reboot box and optionally use VNC to follow installation process if enabled in Kickstart file.
