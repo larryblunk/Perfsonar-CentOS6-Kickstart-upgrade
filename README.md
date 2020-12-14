@@ -1,5 +1,5 @@
 # Perfsonar-CentOS7-Kickstart-install
-A kickstart file for remotely installing a CentOS 7 and Perfsonar on existing CentOS 6 deviced
+A kickstart file for remotely installing a CentOS 7 and Perfsonar on existing CentOS 6 device
 
 Perfsonar (www.perfsonar.net) ended support for CentOS 6 after 4.0.2 relesae and CentOS 6
 itself went end-of-support on Nov 30, 2020.  Upgrading from CentOS 6 to CentOS 7 is not
