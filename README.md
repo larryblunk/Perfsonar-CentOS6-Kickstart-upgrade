@@ -25,12 +25,6 @@ cd /usr/bin; mv pg_dump pg_dump.orig; ln -s /usr/pgsql-9.5/bin/pg_dump
 and place in /boot directory.
 
 4) Update /boot/grub/grub.conf file and add a new boot option as the first entry to direct
-the Kickstart installation on next reboot --
-
-title Install CentOS 7 Perfsonar
-
-  kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks
-  
-  initrd /initrd.img
+the Kickstart installation on next reboot.
 
 5) Reboot box and optionally use VNC to follow installation process if enabled in Kickstart file.
