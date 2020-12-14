@@ -16,7 +16,7 @@ Here are the basic steps involved:
 instructions located at https://docs.perfsonar.net/install_migrate_centos7.html.
 Note that the ps_migrate_backup.sh script will likely fail if you do not replace
 the Postgresql 8.4 pg_dump binary in /usr/bin with the one from Postgresql 9.5. This
-is what I did as a quick hack to replace it.
+is what I did as a quick hack to replace it -- 
 cd /usr/bin; mv pg_dump pg_dump.orig; ln -s /usr/pgsql-9.5/bin/pg_dump
 
 2) Update the ps_upgrade.ks kickstart file where indicated and copy to /boot directory
