@@ -1,8 +1,8 @@
 ##############################
 # ps-upgrade.ks
 #
-# This kickstart file can be used to remotely upgrade from a CentOS 6 based
-# Perfsonar installations to CentOS 7. It is specific to the x86_64
+# This kickstart file can be used to remotely install CentOS over a CentOS 6
+# based Perfsonar installation. It is specific to the x86_64
 # architecture. It does a full re-install, so you will need to follow
 # https://docs.perfsonar.net/install_migrate_centos7.html
 # if you wish to migrate existing Perfsonar configuration and data.
@@ -13,7 +13,7 @@
 # It is based on the Perfsonar net-install kickstart located at
 # https://github.com/perfsonar/toolkit-building/blob/master/kickstarts/centos7-netinstall.cfg
 # with several modifications and is current as of 10Dec2020.
-# Please read carefully and update sections below where indicated.
+# Please see README sections below and update where indicated.
 #
 # For devices with static IP assignments, this kickstart can be placed on
 # the local disk (generally /boot partition on /dev/sda1).  You will also
