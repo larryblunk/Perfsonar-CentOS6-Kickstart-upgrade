@@ -68,10 +68,9 @@ skipx
 # This assumes /dev/sda is install disk -- change if needed.
 # autopart tells the installation to automatically create LVM volumes
 # and the --nohome directive tells it not to create a separate home volume.
-# The root partition will still be 50GB.  The post install lvextend
-# command below will extend the root volume to use all available space
-# If you have more than one disk you may wish to uncomment the ignoredisk
-# directive below to force using a particular disk
+# The root volume will still be 50GB even though no home volume is created.
+# The post install lvextend command below will extend the root volume to
+# use all available space.
 ##############################
 zerombr
 bootloader --location=mbr --boot-drive=sda
