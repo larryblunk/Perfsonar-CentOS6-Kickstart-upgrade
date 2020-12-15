@@ -15,11 +15,11 @@
 # with several modifications and is current as of 10Dec2020.
 # Please see README sections below and update where indicated.
 #
-# For devices with static IP assignments, this kickstart can be placed on
-# the local disk (for example, the /boot directory).  You will also
+# This kickstart file can be placed on a local disk
+# (for example, the /boot directory).  You will also
 # need to download the CentOS 7 vmlinuz and initrd.img files from
 # http://linux.mirrors.es.net/centos/7/os/x86_64/isolinux
-# and place them in the /boot partition.
+# and place them in the /boot directory.
 # Finally, add an entry to your /boot/grub/grub.conf file as the first
 # entry in order to boot this kickstart and install CentOS 7 on reboot. The
 # below assumes ps-upgrade.ks is in /boot directory mounted on /dev/sda1. sshd=1 is
