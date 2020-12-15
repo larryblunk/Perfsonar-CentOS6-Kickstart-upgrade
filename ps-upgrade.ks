@@ -21,8 +21,8 @@
 # http://linux.mirrors.es.net/centos/7/os/x86_64/isolinux
 # and place them in the /boot partition.
 # Finally, add an entry to your /boot/grub/grub.conf file as the first
-# entry in order to boot this kickstart and CentOS 7 on reboot. sshd=1
-# starts sshd server -- the account/password is defined in kickstart file
+# entry in order to boot this kickstart and install CentOS 7 on reboot. sshd=1 is
+# optional and starts the sshd server. The account/password is defined in kickstart file.
 #
 # title Install CentOS 7 Perfsonar
 #	  kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks sshd=1
