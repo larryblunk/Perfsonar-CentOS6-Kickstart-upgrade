@@ -36,7 +36,8 @@ url --url=http://linux.mirrors.es.net/centos/7/os/x86_64
 # README
 # The following sets the root password and forces a reboot
 # after installation for automatic installation.  You will need to fill
-# in the encrypted root password from your existing system.
+# in the encrypted root password from your existing system (or optionally
+# use --plaintext option with a plaintext password for root).
 # You may also wish to uncomment and enable remote ssh and vnc support
 # to follow installation progress and possibly rescue a stuck installation.
 ##############################
