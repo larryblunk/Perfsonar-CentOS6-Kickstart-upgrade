@@ -21,10 +21,11 @@
 # http://linux.mirrors.es.net/centos/7/os/x86_64/isolinux
 # and place them in the /boot partition.
 # Finally, add an entry to your /boot/grub/grub.conf file as the first
-# entry in order to boot this kickstart and CentOS 7 on reboot
+# entry in order to boot this kickstart and CentOS 7 on reboot. sshd=1
+# starts sshd server -- the account/password is defined in kickstart file
 #
 # title Install CentOS 7 Perfsonar
-#	kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks
+#	kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks sshd=1
 #	initrd /initrd.img
 ##############################
 
@@ -62,14 +63,9 @@ selinux --disabled
 skipx
 
 ##############################
-# Boot configuration
-##############################
-zerombr
-bootloader --location=mbr
-
-##############################
 # README
-# Disk partitioning
+# Disk partitioning and installation drive selection
+# This assumes /dev/sda is install disk -- change if needed
 # autopart tells the install to automatically create LVM volumes
 # and the --nohome indicates it should not create a separate home volume.
 # The root partition will still be 50GB.  The post install lvextend
@@ -77,6 +73,8 @@ bootloader --location=mbr
 # If you have more than one disk you may wish to uncomment the ignoredisk
 # directive below to force using a particular disk
 ##############################
+zerombr
+bootloader --location=mbr --boot-drive=sda
 autopart --type=lvm --nohome
 #ignoredisk --only-use=sda
 
