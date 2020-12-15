@@ -74,10 +74,11 @@ skipx
 # The post install lvextend command below will extend the root volume to
 # use all available space.
 ##############################
+ignoredisk --only-use=sda
 zerombr
+clearpart --all --initlabel --drives=sda
 bootloader --location=mbr --boot-drive=sda
 autopart --type=lvm --nohome
-ignoredisk --only-use=sda
 
 ##############################
 # README
