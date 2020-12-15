@@ -25,8 +25,8 @@
 # starts sshd server -- the account/password is defined in kickstart file
 #
 # title Install CentOS 7 Perfsonar
-#	kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks sshd=1
-#	initrd /initrd.img
+#	  kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks sshd=1
+#	  initrd /initrd.img
 ##############################
 
 install
@@ -34,11 +34,11 @@ url --url=http://linux.mirrors.es.net/centos/7/os/x86_64
 
 ##############################
 # README
-# The following has been added to set root password and force a reboot
+# The following sets the root password and forces a reboot
 # after installation for automatic installation.  You will need to fill
 # in the encrypted root password from your existing system.
-# You may also wish to uncomment and enable remote ssh and vnc support below
-# to follow installation progress and possibly rescue stuck installation
+# You may also wish to uncomment and enable remote ssh and vnc support
+# to follow installation progress and possibly rescue a stuck installation.
 ##############################
 rootpw --iscrypted <encrypted root password>
 reboot
@@ -65,9 +65,9 @@ skipx
 ##############################
 # README
 # Disk partitioning and installation drive selection
-# This assumes /dev/sda is install disk -- change if needed
-# autopart tells the install to automatically create LVM volumes
-# and the --nohome indicates it should not create a separate home volume.
+# This assumes /dev/sda is install disk -- change if needed.
+# autopart tells the installation to automatically create LVM volumes
+# and the --nohome directive tells it not to create a separate home volume.
 # The root partition will still be 50GB.  The post install lvextend
 # command below will extend the root volume to use all available space
 # If you have more than one disk you may wish to uncomment the ignoredisk
@@ -76,7 +76,7 @@ skipx
 zerombr
 bootloader --location=mbr --boot-drive=sda
 autopart --type=lvm --nohome
-#ignoredisk --only-use=sda
+ignoredisk --only-use=sda
 
 ##############################
 # README
