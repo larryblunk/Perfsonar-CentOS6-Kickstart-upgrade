@@ -1,12 +1,12 @@
 ##############################
 # ps-upgrade.ks
 #
-# This kickstart file can be used to remotely install CentOS over a CentOS 6
-# based Perfsonar installation. It is specific to the x86_64
+# This kickstart file can be used to remotely install CentOS 7 over an
+# existing CentOS 6 Perfsonar installation. It is specific to the x86_64
 # architecture. It does a full re-install, so you will need to follow
 # https://docs.perfsonar.net/install_migrate_centos7.html
 # if you wish to migrate existing Perfsonar configuration and data.
-# Note that you will likely need to replace the Postgres8 pg_dump
+# Note that you will likely need to replace the Postgres8.4 pg_dump
 # binary in /usr/bin to run the ps_migrate_backup.sh script. For example,
 # cd /usr/bin; mv pg_dump pg_dump.orig; ln -s /usr/pgsql-9.5/bin/pg_dump
 #
