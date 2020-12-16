@@ -66,7 +66,7 @@ skipx
 ##############################
 # README
 # Disk partitioning and installation drive selection
-# This assumes /dev/sda is install disk -- change if needed.
+# This assumes /dev/sda is the install disk.
 # autopart tells the installation to automatically create LVM volumes
 # and the --nohome directive tells it not to create a separate home volume.
 # The root volume will still be 50GB even though no home volume is created.
