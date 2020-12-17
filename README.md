@@ -26,5 +26,8 @@ and place in /boot directory.
 
 4) Update /boot/grub/grub.conf file and add a new boot option as the first entry to direct
 the Kickstart installation on next reboot.
+# title Install CentOS 7 Perfsonar
+#	  kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks sshd=1
+#	  initrd /initrd.img
 
 5) Reboot box and optionally use VNC to follow installation process if enabled in Kickstart file.
