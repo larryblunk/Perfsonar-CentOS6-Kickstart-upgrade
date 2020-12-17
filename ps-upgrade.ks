@@ -83,9 +83,10 @@ autopart --type=lvm --nohome
 # README
 # Network configuration
 # This assumes you are using a statically configured IP address and
-# you will need to fill in the appropriate values. MAC address can be found
-# with ifconfig command. The MAC address is used instead of interface name
-# as interface names changed between CentOS 6 and 7.
+# you will need to fill in the appropriate values. The MAC address can be found
+# with ifconfig command. While the interface name can be used for the device
+# as well, be aware that interface naming conventions changed between CentOS 6
+# and 7, and thus using the MAC address will likely be more straightforward.
 ##############################
 network --bootproto=static --device=<MAC Address> --ip=<device IP> --netmask=<Netmask> --gateway=<Gateway IP> --hostname=<Hostname> --nameserver=<Nameserver IP> activate
 
