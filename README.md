@@ -19,7 +19,7 @@ the Postgresql 8.4 pg_dump binary in /usr/bin with the one from Postgresql 9.5. 
 is what I did as a quick hack to replace it -- 
 cd /usr/bin; mv pg_dump pg_dump.orig; ln -s /usr/pgsql-9.5/bin/pg_dump
 
-2) Update the ps_upgrade.ks kickstart file where indicated (in particular, the rootpw and
+2) Update the ps_upgrade.ks kickstart file from this repository where indicated (in particular, the rootpw and
 network directives) and copy to /boot directory
 
 3) Download vmlinuz and initrd.img files from http://linux.mirrors.es.net/centos/7/os/x86_64/isolinux
