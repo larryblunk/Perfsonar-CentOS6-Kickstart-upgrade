@@ -26,6 +26,10 @@ network commands) and copy to /boot directory
 
 3) Download vmlinuz and initrd.img files from http://linux.mirrors.es.net/centos/7/os/x86_64/isolinux
 and place in /boot directory.
+```
+curl -o /boot/vmlinuz http://linux.mirrors.es.net/centos/7/os/x86_64/isolinux/vmlinuz
+curl -o /boot/initrd.img http://linux.mirrors.es.net/centos/7/os/x86_64/isolinux/initrd.img
+```
 
 4) Update /boot/grub/grub.conf file and add a new boot option (as below) as the first entry to direct
 the Kickstart installation on next reboot. Enabling sshd is optional -- make sure to set a ssh password in
