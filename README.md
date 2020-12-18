@@ -33,7 +33,7 @@ curl -o /boot/initrd.img http://linux.mirrors.es.net/centos/7/os/x86_64/isolinux
 
 4) Update /boot/grub/grub.conf file and add a new boot option (as below) as the first entry to direct
 the Kickstart installation on next reboot. Enabling sshd is optional -- make sure to set a ssh password in
-the kickstart file if enabled.
+the kickstart file if enabled (otherwise, ssh logins with no password will be permitted).
 ```
 title Install CentOS 7 Perfsonar
  kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks sshd=1
