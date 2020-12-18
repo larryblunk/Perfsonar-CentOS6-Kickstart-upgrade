@@ -36,4 +36,4 @@ title Install CentOS 7 Perfsonar
  initrd /initrd.img
 ```
 
-5) Reboot box and optionally use VNC to follow installation process if enabled in Kickstart file.
+5) Remote VNC access may also be enabled in kickstart file to follow installation process.
