@@ -19,10 +19,11 @@
 # need to download the CentOS 7 vmlinuz and initrd.img files from
 # http://linux.mirrors.es.net/centos/7/os/x86_64/isolinux and place them
 # in the /boot directory.
-# Finally, add an entry to your /boot/grub/grub.conf file as the first
-# entry in order to boot this kickstart and install CentOS 7 on reboot. The
-# below assumes ps-upgrade.ks is in /boot directory mounted on /dev/sda1. sshd=1 is
-# optional and starts the sshd server. The password is defined in this kickstart file.
+# Finally, add an entry to your /boot/grub/grub.conf file as the first entry
+# in order to boot this kickstart and install CentOS 7 on reboot. The below
+# assumes ps-upgrade.ks is in /boot directory mounted on /dev/sda1. sshd=1 is
+# optional and starts the sshd server (make sure to set a ssh password with
+# sshpw option below if enabled).
 #
 # title Install CentOS 7 Perfsonar
 #	  kernel /vmlinuz ks=hd:/dev/sda1:/ps-upgrade.ks sshd=1
@@ -34,12 +35,12 @@ url --url=http://linux.mirrors.es.net/centos/7/os/x86_64
 
 ##############################
 # README
-# The following sets the root password and forces a reboot
-# after installation for automatic installation.  You will need to fill
-# in the encrypted root password from your existing system (or optionally
-# use --plaintext option with a plaintext password for root).
-# You may also wish to uncomment and enable remote ssh and vnc support
-# to follow installation progress and possibly rescue a stuck installation.
+# The following sets the root password and forces a reboot after
+# installation for automatic installation.  You will need to fill in the
+# encrypted root password from your existing system (or optionally
+# use --plaintext option with a plaintext password for root).  You may
+# also wish to uncomment and enable remote ssh and vnc support.  If you
+# set sshd boot option, make sure to set an ssh password below.
 ##############################
 rootpw --iscrypted <encrypted root password>
 reboot
