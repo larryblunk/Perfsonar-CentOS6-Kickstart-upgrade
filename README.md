@@ -28,7 +28,7 @@ network commands) and copy to /boot directory
 and place in /boot directory.
 
 4) Update /boot/grub/grub.conf file and add a new boot option (as below) as the first entry to direct
-the Kickstart installation on next reboot. Enabling sshd is optional -- make sure to set a password in
+the Kickstart installation on next reboot. Enabling sshd is optional -- make sure to set a ssh password in
 the kickstart file if enabled.
 ```
 title Install CentOS 7 Perfsonar
