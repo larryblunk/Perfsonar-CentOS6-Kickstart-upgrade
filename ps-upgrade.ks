@@ -19,8 +19,8 @@
 # need to download the CentOS 7 vmlinuz and initrd.img files from
 # http://linux.mirrors.es.net/centos/7/os/x86_64/isolinux and place them
 # in the /boot directory.
-# Finally, add an entry to your /boot/grub/grub.conf file as the first entry
-# in order to boot this kickstart and install CentOS 7 on reboot. The below
+# Finally, add an entry to your /boot/grub/grub.conf file (see below) as the first
+# entry in order to boot this kickstart and install CentOS 7 on reboot. The below
 # assumes ps-upgrade.ks is in the /boot directory mounted on /dev/sda1. sshd=1 is
 # optional and starts the sshd server (make sure to set a ssh password with
 # sshpw option below if enabled).
