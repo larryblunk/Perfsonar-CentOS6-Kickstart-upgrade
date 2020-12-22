@@ -91,6 +91,9 @@ autopart --type=lvm --nohome
 ##############################
 network --bootproto=static --device=<MAC Address> --ip=<device IP> --netmask=<Netmask> --gateway=<Gateway IP> --hostname=<Hostname> --nameserver=<Nameserver IP> activate
 
+#
+# The remainder of this kickstart file should not require modification.
+#
 ##############################
 # Repository Configuration
 ##############################
